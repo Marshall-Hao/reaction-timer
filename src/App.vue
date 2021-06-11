@@ -4,7 +4,7 @@
     <button class="font-bold justify-self-center bg-indigo-500 px-12 py-2 rounded-2xl shadow-lg text-white text-center focus:outline-none" 
   @click="start" :disabled="isPlaying">Play</button>
   <Block @end="endGame" v-if="isPlaying" :delay="delay"  class="justify-self-center mt-20"/>
-  <Results class="justify-self-center mt-10 text-2xl font-semibold"  v-if="showResults" :score="score" />
+  <Results class="justify-self-center mt-10 "  v-if="showResults" :score="score" />
 </div>
 </template>
 
